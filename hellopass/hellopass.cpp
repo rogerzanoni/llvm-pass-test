@@ -15,7 +15,19 @@ namespace {
       return false;
     }
   };
+
+  struct HelloBlock : public BasicBlockPass {
+    static char ID;
+    HelloBlock() : BasicBlockPass(ID) {}
+
+    bool runOnBasicBlock(BasicBlock &blk) {
+        for (BasicBlock::iterator i = blk.begin(), e = blk.end(); i != e; ++i)
+            errs() << *i << "\n";
+    }
+  };
 }
 
 char Hello::ID = 0;
+char HelloBlock::ID = 0;
 static RegisterPass<Hello> X("hello", "Hello World Pass", false, false);
+static RegisterPass<HelloBlock> Y("helloblock", "Hello World Pass", false, false);

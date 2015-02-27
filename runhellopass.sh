@@ -8,4 +8,4 @@ cmake .
 make
 cd ..
 
-opt -load hellopass/libhellopass.so -hello < hello/hello.bc > /dev/null
+opt -load hellopass/libhellopass.so -hello -helloblock < hello/hello.bc > /dev/null
