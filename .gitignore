@@ -1,0 +1,9 @@
+hello/hello
+hello/hello.bc
+hello/hello.ll
+hello/hello.s
+hellopass/CMakeCache.txt
+hellopass/CMakeFiles/
+hellopass/Makefile
+hellopass/cmake_install.cmake
+hellopass/libhellopass.so
