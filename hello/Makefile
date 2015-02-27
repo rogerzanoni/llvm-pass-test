@@ -7,7 +7,7 @@ hello.s: hello.bc
 	llc hello.bc -o hello.s
 
 hello.bc: hello.cpp
-	clang -O3 -emit-llvm hello.cpp -c -o hello.bc
+	clang -O0 -emit-llvm hello.cpp -c -o hello.bc
 	llvm-dis < hello.bc > hello.ll
 
 clean:
