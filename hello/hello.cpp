@@ -10,7 +10,7 @@ public:
 };
 
 void hello() {
-    printf("hello world from hello class\n");
+    printf("hello world from hello function\n");
 }
 
 int main() {
