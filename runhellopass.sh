@@ -1,6 +1,7 @@
 #!/bin/sh
 
 cd hello
+make clean
 make
 
 cd ../hellopass
